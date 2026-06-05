@@ -35,7 +35,7 @@ def build() -> int:
     ext = ".exe" if system == "Windows" else ""
     out = ROOT / "dist" / f"{name}{ext}"
 
-    print(f"Building on {system} → {out}")
+    print(f"Building on {system} -> {out}")
     cmd = [
         sys.executable, "-m", "PyInstaller",
         "--noconfirm",
