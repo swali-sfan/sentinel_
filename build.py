@@ -62,7 +62,7 @@ def build() -> int:
         return rc
     if out.exists():
         size_mb = out.stat().st_size / (1024 * 1024)
-        print(f"\n✓ Built {out}  ({size_mb:.1f} MB)")
+        print(f"\n Built {out}  ({size_mb:.1f} MB)")
     else:
         print(f"\n! Build seemed to succeed but {out} is missing.")
     return 0
